@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora do Afonsinho</title>
+</head>
+<body>
+
+    <style>
+        #div {
+            text-align: center;
+            margin: 0 auto;
+            width: 500px;
+            height: 300px;
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+
+        
+    </style>
+    <div id="div"  >
+        <h1>AFONSINHO CALCULADORA</h1>
+        <input type="number" id="inputer">
+        <p></p>
+
+        <button onclick=" valorizar(); valores += 1; console.log(valores)">1</button>
+        <button onclick=" valorizar(); valores += 2; console.log(valores)">2</button>
+        <button onclick=" valorizar(); valores += 3; console.log(valores)">3</button>
+        <button onclick=" valorizar(); valores += 4; console.log(valores)">4</button> 
+        <p></p>
+        <button onclick=" valorizar(); valores += 5; console.log(valores)">5</button>
+        <button onclick=" valorizar(); valores += 6; console.log(valores)">6</button>
+        <button onclick=" valorizar(); valores += 7; console.log(valores)">7</button>
+        <button onclick=" valorizar();valores  += 8; console.log(valores); typeof(valores) ">8</button>
+        <p></p>
+        <button onclick=" valorizar();valores += 9; console.log(valores)">9</button>
+        <button onclick="valores += 0; console.log(valores)">0</button>
+        <button onclick=" valorizar();valores += ' + '; console.log(valores)">+</button>
+        <button onclick="valorizar(); valores += ' - '; console.log(valores)">-</button>
+        <p></p>
+        <button onclick="valorizar(); valores += ' * '; console.log(valores)">*</button>
+        <button onclick="valorizar(); valores += ' / '; console.log(valores)">/</button>
+        <button onclick=" valorizar();valores += '.'; console.log(valores)">.</button>
+        <button onclick=" valores = eval(valores); console.log(valores)">=</button>
+        <button onclick=" valores = ''; console.log(valores)">C</button>
+        
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+        /*let valores = '';
+
+       function valorizar(vaso) 
+
+       {
+         let vaso = document.getElementById('inputer').value
+        }*/
+
+        let oi = new Date().getMonth()
+        console.log(oi)
+    </script>
+</body>
+</html>

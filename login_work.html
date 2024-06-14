@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Hub</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to left, red, gold);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .container {
+            text-align: center;
+            background: black;
+            border-radius: 10%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 500px;
+            height: 500px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 95px;
+            height: 95px;
+            border-radius: 60%;
+            cursor: pointer;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            width: calc(100% - 40px);
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button {
+            background: linear-gradient(to right, purple, gold);
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .button:hover {
+            background: linear-gradient(to left, purple, gold);
+            color: rgb(255, 255, 255);
+        }
+
+        .conteudo {
+            color: white;
+        }
+
+        .saudacao {
+            
+            color: blue;
+            border-radius: 14px;
+            padding: 5px;
+            font-size: 45px;
+            font-family: f;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        #senha {
+            color: rgb(3, 192, 255);
+        }
+
+        #senha:hover {
+            color: rgb(13, 78, 255);
+        }
+    </style>
+
+
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+</head>
+<body>
+    <img src="ssh.png" alt="" class="logo">
+
+    <h1 class="saudacao" id="saudação"></h1>
+
+    <div class="container">
+        <h1>SMART. STUDY. HUB</h1>
+        <div>
+            <input type="email" name="username" class="input-field" placeholder="Digite seu E-mail">
+            <input type="password" name="password" class="input-field" placeholder="Digite a sua Senha">
+            <div class="conteudo">
+                <label><input type="checkbox" name="" class="lembrar">Lembrar-me destas informações?</label>
+                <a href="#" id="senha">Esqueceu a senha?</a>
+            </div>
+            
+            <p>
+                <i class="fa-solid fa-hippo" style="color: #005eff;" id=""></i>
+            <button type="button" class="button" onclick="redirecione()">Entrar</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        
+        function cumprimento() {
+            let hora_do_dia = new Date().getHours();
+
+            
+
+            if(hora_do_dia >= 4  && hora_do_dia < 12) {
+                document.getElementById("saudação"). textContent = ' Tenha um Bom Dia';
+
+            } 
+             else if(hora_do_dia >= 13 && hora_do_dia  < 17  ) {
+                document.getElementById("saudação").textContent = 'Desejo uma Boa tarde';
+            }
+
+            else {
+                document.getElementById("saudação").textContent = ' Uma Boa Noite para Si';
+            }
+
+
+            console.log(` São Agora: ${hora_do_dia}`)
+
+
+            
+        }
+
+        cumprimento()
+
+
+        function redirecione() {
+            
+            window.location.href = 'smart.html'
+        }
+
+    
+
+
+
+
+    </script>
+</body>
+</html>

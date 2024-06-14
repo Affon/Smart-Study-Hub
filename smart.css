@@ -1,0 +1,578 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, cyan, gold);
+  
+}
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(to left, cyan, white);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    
+    
+    
+}
+
+h1 {
+    font-size: 1.1rem;
+    color: rgb(red, green, blue);
+}
+
+#pitruca {
+   width: 110px; 
+   border-radius: 50%;
+   cursor: pointer;
+   
+}
+
+.texto {
+    position: absolute;
+    top: 50px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin-left: 10px;
+    cursor: pointer;
+    
+}
+
+nav .navegação ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navegação ul li {
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    
+}
+
+nav .navegação ul li a {
+    margin: 0 10px; 
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.4s ease;
+    font-weight: bold;
+  }
+
+
+  nav .navegação ul li a.ativar,
+
+  nav .navegação ul li a:hover {
+    color: yellow;
+    
+  }
+
+#inicio {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(DSC_1825_editado.png);
+    width: 100%;
+    height: 105vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#inicio h2 {
+    color: #fff;
+    font-size: 2.9rem;
+    letter-spacing: 1px;
+}
+
+#inicio p {
+    width: 50%;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+
+#inicio .botao {
+    margin-top: 30px; 
+}
+
+
+
+#inicio a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 8px;
+
+}
+
+#inicio a.azul {
+    color: white;
+    background: rgb(21, 21, 100);
+    transition: 0.9s ease;
+}
+
+#inicio a.azul:hover {
+    color: rgb(21, 21, 100);
+    background: white;
+}
+
+#inicio a.amarelo {
+    color: white;
+    background: goldenrod;
+    transition: 0.9s ease;
+}
+
+#inicio a.amarelo:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;
+}
+
+
+#icone {
+    width: 500px;
+    height: 500px;
+}
+
+#recursos {
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+
+
+#recursos h1{
+    font-size: 25px;
+}
+
+
+
+
+#recursos p {
+    font-size: 20px;
+}
+
+#recursos .recursos-base {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+#recursos .recursos-cartão {
+    background: white;
+    text-align: start;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.recursos-cartão:hover {
+    transform: translateY(-15px);
+    transition: transform 0.5s ease;
+  }
+  
+
+#recursos .recursos-cartão i {
+    font-size: 3rem;
+    color: rgb(44, 44, 80);
+}
+
+#recursos .recursos-cartão h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(46, 46, 59);
+    padding: 13px 0 7px 0;
+}
+
+#recursos .recursos-cartão p {
+    font-size: 1rem;
+    font-weight: 550;
+    color: rgb(70, 70, 87);
+}
+
+/* Disciplinas */
+
+#disciplinas {
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+}
+
+
+#disciplinas h1 {
+    font-size: 25px;
+}
+
+#disciplinas p{
+    font-size: 20px;
+}
+
+#disciplinas .disciplinas-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+    padding: 15px;
+    text-align: center;
+}
+
+#disciplinas .disciplina {
+    text-align: start;
+    background-color: #f9f9ff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#disciplinas .disciplina:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+#disciplinas .disciplina img {
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#disciplinas .disciplina img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+
+#disciplinas .disciplina .detalhes{
+    padding: 15px 15px 0 15px;
+}
+
+
+#disciplinas .disciplina .detalhes i {
+    color: gold;
+    font-size: .9rem;
+}
+
+#disciplinas .disciplina .etiqueta {
+    background-color: rgb(74, 74, 136);
+    color: #fff;
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 100px;
+   font-size: 12px;
+   font-weight: bold;
+   margin: -4px;
+    
+}
+
+#disciplinas .disciplina h6 {
+    font-size: 18px;
+}
+
+img {
+    border-radius: 12px;
+}
+
+
+
+                    /*  REGISTRO */
+
+#registro {
+    padding: 6vw 8vw 4vw 8vw;
+    background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)), url("pexels-katerina-holmes-5905688.jpg");
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    
+}
+
+
+#registro .fundo {
+    color: #fff;
+}
+
+
+#registro .fundo h1 {
+    color: white;
+    font-size: 35px;
+}
+
+
+#registro .fundo .tempo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 41px;
+}
+
+
+#registro .fundo .tempo .data {
+    text-align: center;
+    padding: 13px 33px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    margin: 0 5px 10px 5px;
+    border: 1px solid   rgba(255, 255, 255, 0.18);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+#registro .formulario {
+    background: white;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    height: 400px;
+    width: 400px;
+   
+}
+
+#registro .formulario input {
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84, 40, 241);
+    outline: none;
+   
+    
+
+}
+
+
+
+#registro .formulario input::placeholder {
+    color: #413c3d;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#registro .formulario .botao {
+    margin-top: 20px;
+}
+
+#registro .formulario .amarelo {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    color: white;
+    background: goldenrod;
+    transition: 0.9s ease;
+}
+
+#registro .formulario a.amarelo:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;
+}
+
+
+/* Rodapé */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-col {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-col h3 {
+    margin-bottom: 20px;
+    color: #ffc107;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ffc107;
+}
+
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.newsletter button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffc107;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #e0a800;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 20px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.scroll-to-top {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #ffc107;
+    color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.scroll-to-top:hover {
+    background-color: #e0a800;
+}
+
+
+@media (max-width: 769px) {
+
+    
+    nav {
+        padding: 15px 20px;
+    }
+
+    #pitruca {
+        width: 80px;
+    }
+
+    .texto {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    padding: 1px;
+    font-size: 1rem;
+    
+    margin-left: 1px;
+    
+}
+}
+
+
+    @media (max-width: 475px) {
+       
+        nav {
+          display: flex; 
+          flex-direction: column; 
+          align-items: center; 
+          justify-content: space-between; 
+          width: 100%; 
+          height: auto; 
+          padding: 10px; 
+          box-shadow: none; 
+      
+        nav .texto {
+          position: static; 
+          margin-top: 10px; 
+        }
+      
+        nav .navegação ul {
+          flex-direction: column; 
+          align-items: center; 
+          width: 100%; 
+          text-align: center; 
+          padding: 0; 
+          margin: 0; 
+        }
+      
+        nav .navegação ul li {
+          margin: 5px 0; 
+        }
+      
+        nav .navegação ul li a {
+          font-size: 5px; 
+          display: block;
+        }
+      }
+      
+}
+
+html {
+    scroll-behavior: smooth;
+}
